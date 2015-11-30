@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:id="@+id/msgWholeView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:id="@+id/layout_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <ImageButton
+                android:id="@+id/switch_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30.0px"
+                android:layout_marginTop="8.0dip"
+                android:alpha="100.0"
+                android:background="@drawable/btn_tofloatingwindowmain"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:id="@+id/layout_titleandunread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10.0dip">
+
+                <TextView
+                    android:id="@+id/sms_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#b0000000"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="@string/inbox"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/unreadnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="4.0dip"
+                    android:layout_toRightOf="@id/sms_title"
+                    android:background="@drawable/sms_pop_unread"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="center"
+                    android:paddingLeft="7.0dip"
+                    android:paddingRight="7.0dip"
+                    android:textSize="10.0dip"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/sms_new_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10.0dip"
+                android:shadowColor="#b0000000"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:textColor="#ffffffff"
+                android:textSize="10.0sp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/minimize_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="30.0px"
+                android:layout_marginTop="10.0dip"
+                android:alpha="100.0"
+                android:background="@drawable/btn_tofloatingbutton"
+                android:contentDescription="@string/app_name" />
+
+            <ImageButton
+                android:id="@+id/close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="30.0px"
+                android:layout_marginTop="10.0dip"
+                android:alpha="100.0"
+                android:background="@drawable/sms_pop_close"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        <!--sms_title-->
+        <TextView
+            android:id="@+id/emptyMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_title"
+            android:layout_centerInParent="true"
+            android:alpha="0.4"
+            android:text="@string/list_null"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp" />
+        <RelativeLayout
+            android:id="@+id/sms_pop_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="70.0px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+        <!--120.0px -->
+            <ImageView
+                android:id="@+id/parting_line_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="@drawable/parting_line_h" />
+
+            <ImageButton
+                android:id="@+id/ok_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="40.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@null"
+                android:src="@drawable/sms_delete"
+                android:clickable="true" />
+
+            
+<!--
+            <ImageView
+                android:id="@+id/parting_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3.0dip"
+                android:background="@drawable/parting_line" />
+-->
+            <ImageButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginRight="40.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@null"
+                android:src="@drawable/sms_pop_reply"
+                android:clickable="true" />
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/notes_pop_layout2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true">
+                <Button
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:id="@+id/edit_ok_btn"
+                    android:textColor="#ffffffff"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/send_message"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/sms_pop_ok_btn" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:background="@drawable/parting_line_v"
+                    android:layout_marginTop="4dp"
+					android:layout_marginBottom="4dp"
+                    android:layout_centerHorizontal="true"/>
+				<Button
+					android:id="@+id/edit_cancel_btn"
+					android:textSize="12sp"
+					android:textColor="#ffffffff"
+					android:layout_width="134dp"
+					android:layout_height="wrap_content"
+					android:background="@drawable/sms_pop_cancle_btn"
+					android:layout_marginTop="4dp"
+					android:layout_marginRight="3dp"
+					android:text="@string/cancel"
+					android:layout_alignParentRight="true"
+					android:layout_marginBottom="5dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/edit_model_content_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/sms_pop_bottom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/layout_title"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="2.0dip"
+            android:background="@drawable/sms_pop_edit"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5.0dip"
+                android:paddingTop="2.0dip"
+                android:text="@string/reply"
+                android:textColor="#ff4d4d4d"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@id/reply"
+                android:paddingTop="2.0dip"
+                android:textColor="#ff4d4d4d"
+                android:textSize="12.0sp" />
+
+            <EditText
+                android:id="@+id/sms_edit_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/contact"
+                android:background="@null"
+                android:focusable="true"
+                android:gravity="top"
+                android:lineSpacingExtra="1.2999878sp"
+                android:lineSpacingMultiplier="1.0"
+                android:maxLength="1005"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:paddingTop="4.0dip"
+                android:scrollbars="vertical"
+                android:textColor="#ff000000"
+                android:textCursorDrawable="@null"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/resendnotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/need_resend"
+                android:textColor="#ffff0000"
+                android:textSize="12.0sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gallery_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/sms_pop_bottom"
+            android:layout_below="@id/layout_title"
+            android:layout_marginTop="4.0dip">
+
+            <Gallery
+                android:id="@+id/gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:spacing="12.0px"
+                android:unselectedAlpha="1.0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sms_pop_passwd"
+            android:layout_width="688.0px"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/sms_pop_bottom"
+            android:layout_below="@id/layout_title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="4.0dip"
+            android:background="@drawable/passwd_bg"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/notify_input_passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24.0dip"
+                android:text="@string/password_input_password"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+
+            <EditText
+                android:id="@+id/sms_input_passwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notify_input_passwd"
+                android:layout_marginLeft="40.0dip"
+                android:layout_marginRight="40.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/passwd_input"
+                android:focusable="true"
+                android:gravity="center"
+                android:scrollbars="vertical"
+                android:textColor="#ff000000"
+                android:textCursorDrawable="@null"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/sms_passwd_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/sms_input_passwd"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffff0000"
+                android:textSize="12.0sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/deleteview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/sms_pop_bg"
+    android:paddingLeft="1.0dip"
+    android:paddingRight="1.0dip"
+    android:paddingBottom="4.0dip"
+    android:visibility="visible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/layout_datetime"
+        android:paddingTop="1.0dip"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/newLeft"
+            android:background="@drawable/new_left"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/app_name" />
+        <TextView
+            android:textSize="12.0sp"
+            android:textColor="#ff4d4d4d"
+            android:id="@+id/from"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="1.0dip"
+            android:text="@string/float_window_from"
+            android:layout_alignParentLeft="true" />
+        <TextView android:textSize="12.0sp"
+            android:textColor="#ff4d4d4d"
+            android:id="@+id/contact"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_toRightOf="@id/from" />
+        <TextView android:textSize="12.0sp"
+            android:textColor="#ff4d4d4d"
+            android:id="@+id/date_time"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginRight="7.0dip"
+            android:layout_alignParentRight="true" />
+        <ImageView
+            android:id="@+id/newRight"
+            android:background="@drawable/new_right"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name" />
+        <EditText
+            android:textSize="14.0sp"
+            android:textColor="#ff000000"
+            android:gravity="top"
+            android:id="@+id/sms_content"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="4.0dip"
+            android:focusable="false"
+            android:visibility="visible"
+            android:scrollbars="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="85.0dip"
+            android:hint="@string/list_null"
+            android:editable="false"
+            android:layout_below="@id/from"
+            android:lineSpacingExtra="1.2999878sp"
+            android:lineSpacingMultiplier="1.0" />
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="#ff000000"
+            android:id="@+id/entrpted"
+            android:background="@drawable/btn_entrypted"
+            android:paddingLeft="6.0dip"
+            android:paddingTop="6.0dip"
+            android:paddingRight="6.0dip"
+            android:paddingBottom="4.0dip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message_encrypted_unlock"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_pagenum"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sms_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:textSize="12.0sp"
+            android:textColor="#ff4d4d4d"
+            android:id="@+id/page_num"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>
