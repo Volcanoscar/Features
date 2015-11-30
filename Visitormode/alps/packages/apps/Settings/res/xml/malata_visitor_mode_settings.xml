@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/malata_visitor_mode_title" >
+        <CheckBoxPreference
+            android:key="malata_visitor_mode"
+            android:title="@string/malata_visitor_mode_title" />
+        
+        <Preference
+            android:key="malata_change_password"
+            android:title="@string/malata_change_password_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/malata_app_manager_title">
+    </PreferenceCategory>
+</PreferenceScreen>
