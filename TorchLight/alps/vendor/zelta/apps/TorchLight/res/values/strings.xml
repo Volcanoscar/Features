@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">TorchLight</string>
+    <string name="again_exit">Press again to exit</string>
+</resources>
