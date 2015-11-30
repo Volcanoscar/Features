@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 创建新文件夹 -->
+    <item
+        android:id="@+id/create_folder"
+        android:icon="@drawable/actionbar_fm_create_folder"
+        android:showAsAction="always"
+        android:title="@string/create_folder"/>
+    <!-- 复制 -->
+    <item
+        android:id="@+id/paste"
+        android:icon="@drawable/actionbar_fm_paste"
+        android:showAsAction="always"
+        android:title="@string/paste"/>
+     <!-- 搜索-->
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/actionbar_fm_search"
+        android:showAsAction="always"
+        android:title="@string/search"/>
+    
+     <!-- 选择文件或文件夹 -->
+    <item
+        android:id="@+id/change_mode"
+        android:showAsAction="never"
+        android:title="@string/change_mode"/>
+    
+     <!-- 显示隐藏文件 -->
+    <item
+        android:id="@+id/hide"
+        android:showAsAction="never"
+        android:title="@string/show_file"/>
+     <!-- 排序 -->
+    <item
+        android:id="@+id/sort"
+        android:showAsAction="never"
+        android:title="@string/sort"/>
+
+</menu>

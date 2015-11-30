@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">文件管理</string>
+    <string name="confirm">确定</string>
+    <string name="menu_item_search">搜索</string>
+    <string name="operation_create_folder">新建文件夹</string>
+    <string name="menu_item_sort">排序</string>
+    <string name="menu_item_sort_name">名称 (A - Z)</string>
+    <string name="menu_item_sort_size">大小 (小 - 大)</string>
+    <string name="menu_item_sort_date">日期 (新 - 旧)</string>
+    <string name="menu_item_sort_type">类型</string>
+    <string name="operation_favorite">收藏</string>
+    <string name="operation_unfavorite">取消收藏</string>
+    <string name="operation_copy">复制</string>
+    <string name="operation_copy_path">复制路径</string>
+    <string name="operation_paste">粘贴</string>
+    <string name="operation_move">剪切</string>
+    <string name="operation_send">发送</string>
+    <string name="operation_rename">重命名</string>
+    <string name="operation_delete">删除</string>
+    <string name="operation_info">详情</string>
+    <string name="operation_cancel">取消</string>
+    <string name="operation_refresh">刷新</string>
+    <string name="operation_selectall">全选</string>
+    <string name="operation_cancel_selectall">取消全选</string>
+    <string name="operation_show_sys">显示点文件和隐藏文件</string>
+    <string name="operation_hide_sys">隐藏点文件和隐藏文件</string>
+    <string name="cancel">取消</string>
+    <string name="no_file">没有文件</string>
+    <string name="tab_category">文件管理</string>
+    <string name="tab_sd">文件管理</string>
+    <string name="sd_folder">SD卡</string>
+    <string name="category_all">所有</string>
+    <string name="category_music">音乐</string>
+    <string name="category_video">视频</string>
+    <string name="category_picture">图片</string>
+    <string name="category_theme">主题</string>
+    <string name="category_document">文档</string>
+    <string name="category_zip">压缩包</string>
+    <string name="category_apk">安装包</string>
+    <string name="category_other">其它</string>
+    <string name="category_favorite">收藏夹</string>
+    <string name="operation_rename_message">请输入新名称</string>
+    <string name="operation_create_folder_message">请输入文件夹名称</string>
+    <string name="operation_delete_confirm_message">确认删除?</string>
+    <string name="new_folder_name">新建文件夹</string>
+    <string name="sd_card_size">SD卡:<xliff:g id="total_size">%1$s</xliff:g></string>
+    <string name="sd_card_available">可用:<xliff:g id="available_size">%1$s</xliff:g></string>
+    <string name="file_info_location">位置:</string>
+    <string name="file_info_size">大小:</string>
+    <string name="file_info_modified">时间:</string>
+    <string name="file_info_canread">可读:</string>
+    <string name="file_info_canwrite">可写:</string>
+    <string name="file_info_ishidden">隐藏:</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="operation_deleting">正在删除...</string>
+    <string name="operation_pasting">正在复制...</string>
+    <string name="operation_moving">正在移动...</string>
+    <string name="confirm_know">知道了</string>
+    <string name="install_successful">安装成功</string>
+    <string name="install_failed">安装失败</string>
+    <string name="error_info_cant_send_folder">不能发送文件夹</string>
+    <string name="added_favorite">已加入收藏夹</string>
+    <string name="removed_favorite">已从收藏夹移除</string>
+    <string name="fail_to_create_folder">创建文件夹失败，文件夹已存在。</string>
+    <string name="fail_to_rename">重命名失败失败，可能使用该名称的文件或文件夹已存在。</string>
+    <string name="enable_sd_card">无可用SD卡，请插入或连接SD卡</string>
+    <string name="no_wifi_hint">无WiFi网络,点击以查看WiFi设置</string>
+    <string name="search_title">搜索文件</string>
+    <string name="search_hint">输入部分或全部文件名</string>
+    <string name="file_size">%d 字节</string>
+    <string name="dialog_select_type">选择文件类型</string>
+    <string name="dialog_type_text">文本</string>
+    <string name="dialog_type_audio">音频</string>
+    <string name="dialog_type_video">视频</string>
+    <string name="dialog_type_image">图像</string>
+    <string name="favorite_photo">照片</string>
+    <string name="favorite_sdcard">SD卡</string>
+    <string name="favorite_root">根目录</string>
+    <string name="favorite_screen_cap">MIUI截屏</string>
+    <string name="favorite_ringtone">铃声</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_exit">退出</string>
+    <string name="preference_title">常规设置</string>
+    <string name="pref_primary_folder">主页文件夹</string>
+    <string name="pref_read_root">读取根目录</string>
+    <string name="pref_show_real_path">显示真实路径</string>
+    <string name="pref_primary_folder_summary">程序启动时显示的文件夹，当前路径为<xliff:g id="string">%1$s</xliff:g></string>
+    <string name="pref_show_real_path_summary">在导航栏中显示真实路径</string>
+    
+    <!-- ****************************************** -->
+    <string name="alert_delete_multiple">将会删除这些文件</string>
+    <string name="alert_delete_single">将会删除该文件</string>
+    <string name="delete_deny">没有权限删除。</string>
+    <string name="copy">"复制"</string>
+    <string name="copy_deny">没有权限复制。</string>
+    <string name="create_folder">新建文件夹</string>
+    <string name="cut">"剪切"</string>
+    <string name="cut_deny">没有权限剪切。</string>
+    <string name="delete">删除</string>
+    <string name="delete_fail">删除失败。</string>
+    <string name="deleting">正在删除</string>
+    <string name="deselect_all">取消全选</string>
+    <string name="select_all">全选</string>
+    <string name="details">详情</string>
+    <string name="done">"完成"</string>
+    <string name="executable">可执行</string>
+    <string name="insufficient_memory">空间不足。</string>
+    <string name="loading">正在载入\u2026</string>
+    <string name="modified_time">修改日期</string>
+    <string name="name">名称</string>
+    <string name="new_folder">新文件夹</string>
+    <string name="ok">确定</string>
+    <string name="paste">"粘贴"</string>
+    <string name="pasting">正在复制</string>
+    <string name="paste_fail">粘贴失败。</string>
+    <string name="paste_same_folder">目标文件夹与原文件夹相同，不可以粘贴。</string>
+    <string name="readable">可读</string>
+    <string name="rename">重命名</string>
+    <string name="selected">选中</string>
+    <string name="send_file">发送文件</string>
+    <string name="share">"分享"</string>
+    <string name="size">大小</string>
+    <string name="sort_by">排序方式</string>
+    <string name="wait">"请稍候..."</string>
+    <string name="writable">可写</string>
+    <string name="confirm_rename">确认重命名</string>
+    <string name="invalid_char_prompt">您输入了无效字符。</string>
+    <string name="msg_rename_ext">您正在尝试修改文件扩展名，可能导致系统无法识别文件，确定要修改？</string>
+    <string name="msg_unable_open_file">文件格式不支持。</string>
+
+    <string-array name="sort_by">
+        <item>类型</item>
+        <item>名称 (A - Z)</item>
+        <item>大小 (大 - 小)</item>
+        <item>日期 (新 - 旧)</item>
+    </string-array>
+
+    <string name="more">更多</string>
+    <string name="search">搜索</string>
+    <string name="sort">排序</string>
+    <string name="show_file">显示隐藏文件</string>
+    <string name="hide_file">不显示隐藏文件</string>
+    <string name="default_search_text">请输入搜索内容</string>
+    <string name="search_text_empty">搜索内容不能为空.</string>
+    <string name="free_space">可用空间</string>
+    <string name="total_space">总容量</string>
+    <string name="paste_sub_folder">不能粘贴文件到子文件夹。</string>
+    <string name="operation_fail">一些操作失败。</string>
+    <string name="search_files">搜索文件</string>
+    <string name="search_result">%2$d 个结果搜索自 \"%1$s\"</string>
+    <!-- modified -->
+    <string name="empty_msg">(文件夹是空的)</string>
+    <string name="unmounted">%1$s 被卸载。</string>
+    <string name="already_exists">%1$s 已存在。</string>
+    <string name="path_not_exists">%1$s 不存在。</string>
+    <string name="create_hidden_file">以\".\"开头的文件将被隐藏。</string>
+    <string name="modify_hidden_file">不以\'.\'开头的文件将不被隐藏。</string>
+    <string name="file_name_too_long">输入的文件名称过长。</string>
+    <string name="invalid_empty_name">文件名不能为空。</string>
+    <string name="some_paste_fail">一些粘贴操作失败。</string>
+    <string name="some_delete_fail">一些删除操作失败。</string>
+    <string name="search_empty">搜索的内容不能为空。</string> 
+    <string name="search_setting_description">本地文件和文件夹</string>
+    <string name="change_mode">选择文件或文件夹</string>
+    <string name="folder_beam_forbidden_title">不能发送文件夾</string>
+    <string name="folder_beam_forbidden_message">不支持发送文件夾。可以选择多个文件进行发送。</string>
+    <string name="drm_beam_forbidden_title">发送被禁止</string>
+    <string name="drm_beam_forbidden_message">受DRM(数字版权管理)保护的文件不能发送。</string>
+    <!-- ******************************************* -->
+    
+    <string name="view_phone_stroageinfo">手机存储信息</string>
+	<string name="view_tips">按文件夹浏览</string>
+	<string name="phone_folder">手机目录</string>
+	<string name="mutil_selected">选择</string>
+	<string name="ftp_manager">远程管理</string>
+	
+	<!-- FTP -->
+	<string name="tab_remote">远程管理</string>
+    <string name="start_server">启动服务</string>
+    <string name="stop_server">停止服务</string>
+    <string name="notif_server_starting">远程管理服务已启动</string>
+    <string name="notif_title">远程管理服务正在运行</string>
+    <string name="wifi_state">WLAN状态</string>
+    <string name="instruction_pre">启动后可以从电脑端远程管理手机文件</string>
+    <string name="instruction">请在“我的电脑”地址栏中输入：</string>
+    <string name="no_wifi">无WLAN网络</string>
+    <string name="storage_warning">外部存储不可用.</string>
+    <string name="multi_select_title" >已选择 <xliff:g id="number">%1$s</xliff:g> 个</string>
+     <string name="server_control_settings">设置</string>
+
+</resources>

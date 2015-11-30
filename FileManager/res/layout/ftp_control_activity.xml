@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+      	android:background="@color/title_background"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="@string/tab_remote"
+        android:textStyle="bold" />
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/title_line"/>
+
+    <TextView
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90px"
+        android:singleLine="true"
+        android:text="@string/wifi_state"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/wifi_state"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14px"
+        android:singleLine="true"
+        android:text="@string/wifi_state" />
+
+    <ImageView
+        android:id="@+id/wifi_state_image"
+        android:layout_width="98dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25px"
+        android:src="@drawable/wifi_state4" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="0.09"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/instruction_pre"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="73px"
+            android:textSize="18sp" 
+            android:text="@string/instruction_pre"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/instruction"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/instruction"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ip_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30px"
+            android:background="@drawable/ipaddress_bg"
+            android:gravity="center"
+            android:minWidth="150px"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/start_stop_button"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50px"
+            android:padding="10dp"
+            android:layout_marginTop="30px"
+            android:background="@drawable/ftp_btn_bottom"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/start_stop_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="15px"
+                android:gravity="center"
+                android:textSize="40px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
