@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mediatek.fmradiotest.tests"
+      android:versionCode="1"
+      android:versionName="1.1.1">
+    <uses-permission android:name="android.permission.ACCESS_FM" />
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+        <!-- uses-library android:name="com.jayway.android.robotium" /> -->
+    </application>
+
+    <instrumentation
+        android:name=".FmRadioFunctionRunner"
+        android:label="FM Radio function auto-tests"
+        android:targetPackage="com.android.fmradio" />
+
+   <instrumentation
+        android:name=".FmRadioRegressionRunner"
+        android:label="FM Radio regression auto-tests"
+        android:targetPackage="com.android.fmradio" />
+
+    <uses-permission android:name="android.permission.RUN_INSTRUMETATION" />
+</manifest> 
