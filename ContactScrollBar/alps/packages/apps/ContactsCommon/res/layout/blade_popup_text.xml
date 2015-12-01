@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.contacts.common.widget.AntialiasedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="50sp"
+	android:minHeight="74dip"
+    android:maxHeight="74dip"
+    android:minWidth="73dip"
+    android:maxWidth="73dip"	
+    android:includeFontPadding="false"
+    android:gravity="center"
+/>
+<!--zhaoxy add 141118 for blade view-->
