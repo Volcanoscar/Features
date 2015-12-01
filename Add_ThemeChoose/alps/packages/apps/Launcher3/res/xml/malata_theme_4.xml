@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- replace internal app icon by linpeicai@malatamobile.com begin 20140723-->
+<appicon xmlns:launcher="http://schemas.android.com/apk/res/com.android.launcher3">
+
+    <!-- BackupRestore -->
+    <item launcher:component="ComponentInfo{com.mediatek.datatransfer/com.mediatek.datatransfer.BootActivity}"
+          launcher:drawable="theme5_launcher_datatransfer_5"/>
+    <!-- Bluebooth -->
+    <item launcher:component="ComponentInfo{com.mediatek.bluetooth/com.mediatek.bluetooth.hid.BluetoothHidActivity}"
+          launcher:drawable="ic_launcher_bluetooth"/>          
+    <!-- Browser -->
+    <item launcher:component="ComponentInfo{com.android.browser/com.android.browser.BrowserActivity}"
+          launcher:drawable="theme5_launcher_browser_5"/>
+    <!-- Calculator -->
+    <item launcher:component="ComponentInfo{com.android.calculator2/com.android.calculator2.Calculator}"
+          launcher:drawable="theme5_launcher_calculator_5"/>
+    <!-- Calendar -->
+    <item launcher:component="ComponentInfo{com.android.calendar/com.android.calendar.AllInOneActivity}"
+          launcher:drawable="theme5_launcher_calendar_5"/>
+    <!-- Camera -->
+    <item launcher:component="ComponentInfo{com.android.gallery3d/com.android.camera.CameraLauncher}"
+          launcher:drawable="theme5_launcher_camera_5"/>
+    <!-- Contacts -->
+     <item launcher:component="ComponentInfo{com.android.contacts/com.android.contacts.activities.PeopleActivity}"
+          launcher:drawable="theme5_launcher_contacts_5"/>
+     <!-- DeskClock -->
+     <item launcher:component="ComponentInfo{com.android.deskclock/com.android.deskclock.DeskClock}"
+          launcher:drawable="theme5_launcher_alarmclock_5"/>
+     <!-- Download -->
+     <item launcher:component="ComponentInfo{com.android.providers.downloads.ui/com.android.providers.downloads.ui.DownloadList}"
+          launcher:drawable="theme5_launcher_download_5"/>
+     <!-- Email -->
+     <item launcher:component="ComponentInfo{com.android.email/com.android.email.activity.Welcome}"
+          launcher:drawable="theme5_launcher_email_5"/>
+     <!-- FileManager -->
+     <item launcher:component="ComponentInfo{com.mediatek.filemanager/com.mediatek.filemanager.FileManagerOperationActivity}"
+          launcher:drawable="theme5_app_filemanager_5"/>
+     <!-- FMRadio -->
+     <item launcher:component="ComponentInfo{com.mediatek.FMRadio/com.mediatek.FMRadio.FMRadioActivity}"
+          launcher:drawable="theme5_launcher_temp_5"/>
+     <!-- Gallery -->
+     <item launcher:component="ComponentInfo{com.android.gallery3d/com.android.gallery3d.app.Gallery}"
+          launcher:drawable="theme5_launcher_gallery_5"/>
+     <item launcher:component="ComponentInfo{com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}"
+          launcher:drawable="theme5_launcher_gallery_5"/>     
+     <!-- Mms -->
+     <item launcher:component="ComponentInfo{com.android.mms/com.android.mms.ui.BootActivity}"
+          launcher:drawable="theme5_launcher_smsmms_5"/>
+     <!-- Music -->
+     <item launcher:component="ComponentInfo{com.android.music/com.android.music.MusicBrowserActivity}"
+          launcher:drawable="theme5_app_music_5"/>
+     <!-- NoteBook -->
+     <item launcher:component="ComponentInfo{com.mediatek.notebook/com.mediatek.notebook.NotesList}"
+          launcher:drawable="theme5_launcher_notebook_5"/>
+     <!-- Phone -->
+     <item launcher:component="ComponentInfo{com.android.dialer/com.android.dialer.DialtactsActivity}"
+          launcher:drawable="theme5_launcher_phone_5"/>
+     <!-- QuickSearchBox -->
+     <item launcher:component="ComponentInfo{com.android.quicksearchbox/com.android.quicksearchbox.SearchActivity}"
+          launcher:drawable="ic_launcher_quicksearchbox"/> 
+     <!-- Settings -->
+     <item launcher:component="ComponentInfo{com.android.settings/com.android.settings.Settings}"
+          launcher:drawable="theme5_launcher_settings_5"/>
+     <!-- SoundRecorder -->
+     <item launcher:component="ComponentInfo{com.android.soundrecorder/com.android.soundrecorder.SoundRecorder}"
+          launcher:drawable="theme5_launcher_cell_broadcast_5"/>
+     <!-- Stk -->
+     <item launcher:component="ComponentInfo{com.mediatek.StkSelection/com.mediatek.StkSelection.StkSelection}"
+          launcher:drawable="theme5_launcher_stkselection_5"/>
+     <!-- Theme -->
+     <item launcher:component="ComponentInfo{com.android.launcher3/com.android.launcher3.SceneChooser}"
+          launcher:drawable="ic_icon_theme_settings"/>
+     <!-- Todos -->
+     <item launcher:component="ComponentInfo{com.mediatek.todos/com.mediatek.todos.TodosActivity}"
+          launcher:drawable="theme5_launcher_todo_5"/>     
+     <!-- VideoPlayer -->                                                               
+     <item launcher:component="ComponentInfo{com.mediatek.videoplayer/com.mediatek.videoplayer.MovieListActivity}"
+          launcher:drawable="theme5_launcher_videoplayer_5"/>
+</appicon>
+<!-- replace internal app icon by linpeicai@malatamobile.com end 20140723-->
