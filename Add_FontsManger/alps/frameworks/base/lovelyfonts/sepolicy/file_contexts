@@ -1,0 +1,3 @@
+/dev/socket/fontd	u:object_r:fontd_socket:s0
+/system/bin/fontd	u:object_r:fontd_exec:s0
+

@@ -1,0 +1,6 @@
+#======================lovelyfonts start=======================
+service fontd /system/bin/fontd --root_seclabel=u:r:su:s0
+    class main
+    user root
+    socket fontd stream 0666 root root
+#======================lovelyfonts end  =======================

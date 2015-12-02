@@ -1,0 +1,48 @@
+type fontd, domain;
+type fontd_exec, exec_type, file_type;
+
+init_daemon_domain(fontd)
+typeattribute fontd mlstrustedsubject;
+
+allow fontd system_file:file x_file_perms;
+allow fontd shell_exec:file rx_file_perms;
+allow fontd zygote_exec:file rx_file_perms;
+
+allow fontd system_data_file:dir create_dir_perms;
+allow fontd system_data_file:notdevfile_class_set create_file_perms;
+allow fontd system_data_file:file relabelfrom;
+allow fontd system_data_file:dir relabelfrom;
+type_transition fontd system_data_file:sock_file system_ndebug_socket "ndebugsocket";
+
+allow fontd self:capability { dac_override setgid setuid fowner chown };
+
+allow fontd fuse_device:chr_file rw_file_perms;
+allow fontd fuse:dir r_dir_perms;
+allow fontd fuse:file r_file_perms;
+
+allow fontd tmpfs:lnk_file read;
+
+allow fontd system_prop:property_service set;
+
+allow fontd zygote_exec:file { read getattr open execute execute_no_trans };
+allow fontd dalvikcache_data_file:dir create_dir_perms;
+allow fontd dalvikcache_data_file:file create_file_perms;
+
+allow fontd self:process execmem;
+allow fontd ashmem_device:chr_file execute;
+
+unix_socket_connect(fontd, property, init)
+unix_socket_connect(system_app, property, init)
+unix_socket_connect(system_server, property, init)
+
+unix_socket_send(system_server, wpa, wpa)
+
+binder_use(fontd)
+binder_call(fontd, binderservicedomain)
+binder_call(fontd, appdomain)
+binder_call(fontd, dumpstate)
+binder_service(fontd)
+
+allow fontd system_app_data_file:file { read write getattr };
+allow fontd app_data_file:dir create_dir_perms;
+allow fontd app_data_file:notdevfile_class_set create_file_perms;

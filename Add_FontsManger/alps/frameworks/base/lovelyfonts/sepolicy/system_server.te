@@ -1,0 +1,2 @@
+unix_socket_connect(system_server, fontd, fontd)
+
