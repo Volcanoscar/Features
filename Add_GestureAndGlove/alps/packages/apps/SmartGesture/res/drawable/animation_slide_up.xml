@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/up_01" />
+    <item android:duration="50" android:drawable="@drawable/up_02" />
+    <item android:duration="50" android:drawable="@drawable/up_03" />
+    <item android:duration="50" android:drawable="@drawable/up_04" />
+    <item android:duration="50" android:drawable="@drawable/up_05" />
+    <item android:duration="50" android:drawable="@drawable/up_06" />
+    <item android:duration="50" android:drawable="@drawable/up_07" />
+    <item android:duration="50" android:drawable="@drawable/up_08" />
+    <item android:duration="50" android:drawable="@drawable/up_09" />
+    <item android:duration="50" android:drawable="@drawable/up_10" />
+    <item android:duration="50" android:drawable="@drawable/up_11" />
+    <item android:duration="50" android:drawable="@drawable/up_12" />
+    <item android:duration="50" android:drawable="@drawable/up_13" />
+    <item android:duration="50" android:drawable="@drawable/up_14" />
+    <item android:duration="50" android:drawable="@drawable/up_15" />
+    <item android:duration="50" android:drawable="@drawable/up_16" />
+    <item android:duration="50" android:drawable="@drawable/up_17" />
+    <item android:duration="50" android:drawable="@drawable/up_18" />
+    <item android:duration="50" android:drawable="@drawable/up_19" />
+    <item android:duration="50" android:drawable="@drawable/up_20" />
+</animation-list>

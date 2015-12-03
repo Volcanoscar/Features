@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- caoqiaofeng add MTSFEFL-14 20150323 -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/listSeparatorTextViewStyle"
+    android:id="@+android:id/title"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textAllCaps="false"
+/>

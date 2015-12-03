@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="1.0" 
+    package="com.malatamobile.smartgesture"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+     
+     
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
+    <application android:theme="@style/AppTheme" 
+        		android:label="@string/app_name" 
+        		android:icon="@drawable/ic_launcher" 
+        		android:allowBackup="true">
+        		
+        <activity android:label="@string/app_name" 
+            android:name="com.malatamobile.smartgesture.GestureHandlerActivity" 
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+<!--   caoqioafeng del SFZZAAIXLKK-121  20140805
+        <receiver android:name="com.malatamobile.smartgesture.GestureReceiver">           
+           <intent-filter>
+                <action android:name="android.intent.guest_broadcase" />
+           </intent-filter> 
+        </receiver>  
+-->                      
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" 
+    android:gravity="center" 
+    android:background="#ff000000" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" 
+        android:id="@id/ani_view" 
+        android:layout_width="500.0px" 
+        android:layout_height="500.0px" 
+        android:scaleType="fitXY" 
+        android:contentDescription="@string/animation" />
+</LinearLayout>

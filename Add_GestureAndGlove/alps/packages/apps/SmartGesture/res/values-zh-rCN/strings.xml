@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wechat_not_installed">您还没有安装“微信”哦！</string>
+    <string name="qq_not_installed">您还没有安装“QQ”哦！</string>
+</resources>
