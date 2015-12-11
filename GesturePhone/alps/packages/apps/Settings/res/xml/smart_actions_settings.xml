@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009-2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!--zhaoxy  add 20141028 SFFOET-8-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/smart_action">
+
+    <PreferenceCategory android:key="smart_action_title"
+            android:title="@string/smart_action_title">
+
+        <SwitchPreference
+                android:key="smart_action"
+                android:title="@string/smart_action"
+				android:summaryOn="@string/smart_action_summary_on"
+				android:summaryOff="@string/smart_action_summary_off"
+                />
+    </PreferenceCategory>
+                
+				
+    <PreferenceCategory android:key="smart_action_items"
+            android:title="@string/smart_action_items">
+                
+         <SwitchPreference
+                android:key="flip_to_silence"
+                android:title="@string/flip_to_silence"
+                android:summary="@string/flip_to_silence_summary"
+                android:dependency="smart_action"
+                />
+                
+         <SwitchPreference
+                android:key="flip_to_speaker"
+                android:title="@string/flip_to_speaker"
+                android:summary="@string/flip_to_speaker_summary"
+                android:dependency="smart_action"
+                />
+                
+         <SwitchPreference
+                android:key="flip_to_snooze_alarm"
+                android:title="@string/flip_to_snooze_alarm"
+                android:summary="@string/flip_to_snooze_alarm_summary"
+                android:dependency="smart_action"
+                />
+                
+         <SwitchPreference
+                android:key="decrease_ring_on_move"
+                android:title="@string/decrease_ring_on_move"
+                android:summary="@string/decrease_ring_on_move_summary"
+                android:dependency="smart_action"
+                />
+                
+         <SwitchPreference
+                android:key="quick_launch_camera"
+                android:title="@string/quick_launch_camera"
+                android:summary="@string/quick_launch_camera_summary"
+                android:dependency="smart_action"
+                />
+                
+         <SwitchPreference
+                android:key="quick_launch_phone"
+                android:title="@string/quick_launch_phone"
+                android:summary="@string/quick_launch_phone_summary"
+                android:dependency="smart_action"
+                />                                
+
+    </PreferenceCategory>
+</PreferenceScreen>
+

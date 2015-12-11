@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"智能动作"</string>
+    <string name="ttm_open">"打开功能"</string>
+    <string name="ttm_close">"关闭功能"</string>
+    <string name="click_ttm_radio_set">"点击设置翻转角度"</string>
+    <string name="ttm_radio_set">"点击确认翻转角度"</string>
+    <string name="ttm_radio_rightnow">"当前翻转角度:"</string>
+
+</resources>

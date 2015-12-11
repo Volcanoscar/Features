@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Gesture</string>
+    <string name="ttm_open">Open This Function</string>
+    <string name="ttm_close">Close This Function</string>
+    <string name="click_ttm_radio_set">click to set radio of over turn</string>
+    <string name="ttm_radio_set">click to ensure radio of over turn</string>
+    <string name="ttm_radio_rightnow">the over turn radio is\t</string>
+
+</resources>

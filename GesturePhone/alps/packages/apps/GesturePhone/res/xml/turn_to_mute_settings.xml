@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+  >
+  <CheckBoxPreference
+      android:key="ttm_switch"
+      android:title="@string/ttm_open"
+      android:defaultValue="true"
+      >
+  </CheckBoxPreference>
+<!-- 
+  <Preference
+      android:key="ttm_set_radio"
+      android:title="@string/click_ttm_radio_set"
+      >
+  </Preference>
+-->
+</PreferenceScreen>
