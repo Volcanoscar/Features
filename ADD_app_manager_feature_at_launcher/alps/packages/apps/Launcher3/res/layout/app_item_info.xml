@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@+id/app_item_info_layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_vertical" android:layout_gravity="left" android:id="@+id/app_item_icon" android:layout_width="72dp" android:layout_height="72dp" />
+    <TextView android:textSize="20.0sp" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/app_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_weight="1.0" />
+    <CheckBox android:gravity="center_vertical" android:id="@+id/app_item_state" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>
