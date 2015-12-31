@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2014 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:id="@+id/keyguard_small_view_container"
+  android:background="#ff000000"
+  android:fitsSystemWindows="true">
+
+  <com.android.keyguard.KeyguardStatusViewEx
+  	android:layout_marginTop="20dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/keyguard_accessibility_status"
+        android:orientation="vertical" >
+
+        <com.mediatek.keyguard.Clock.ClockView
+            android:id="@+id/clock_view"
+            android:layout_marginTop="15dip"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/clock_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawablePadding="2dip"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#ffffffff"
+                android:textSize="60dip" 
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/am_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"          
+                android:layout_toRightOf="@id/clock_text"    
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:textSize="20dip"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/line_split"
+                android:layout_width="3dp"
+                android:layout_height="65dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/am_pm"
+                android:background="#ffffffff" />
+
+            <TextView
+                android:id="@+id/date_view_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="bottom|left"
+                android:paddingTop="5dip"
+                android:textSize="20dip"
+                android:layout_toRightOf="@id/line_split"
+                android:layout_weight="1"
+                android:textColor="@color/clock_white" 
+                android:textStyle="bold"/>
+        </com.mediatek.keyguard.Clock.ClockView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:orientation="horizontal" >
+            <TextClock
+                android:id="@+id/date_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:textColor="@color/transparent"
+                android:visibility="gone" />            
+                <!-- todo shuyong
+            <com.android.keyguard.UnReadEventView
+                android:id="@+id/unread_event_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                
+                androidprv:newEventDrawables="@array/small_window_new_event_drawables" />
+                -->
+
+            <TextView
+                android:id="@+id/alarm_status"
+                style="@style/widget_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_alarm_small"
+                android:drawableStart="@drawable/ic_alarm_small"
+                android:textColor="@color/clock_gray"
+                android:visibility="gone" />            
+        </LinearLayout>
+    </com.android.keyguard.KeyguardStatusViewEx>
+</FrameLayout>
+
