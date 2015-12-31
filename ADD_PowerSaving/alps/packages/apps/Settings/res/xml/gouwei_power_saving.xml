@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/title_power_saving">
+        <ListPreference 
+        		android:persistent="false" 
+        		android:entries="@array/power_saving_percent_entries" 
+        		android:title="@string/power_saving_percent" 
+        		android:key="power_saving_percent" 
+        		android:summary="@string/power_saving_value_summary" 
+        		android:entryValues="@array/power_saving_percent_values" />
+        <SwitchPreference 
+	        	android:persistent="false" 
+	        	android:title="@string/title_power_saving" 
+	        	android:key="power_saving" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_power_saving_setting">
+        <CheckBoxPreference android:persistent="false" android:title="@string/title_power_saving_wifi" android:key="power_saving_wifi" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/title_power_saving_bt" android:key="power_saving_bt" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/title_power_saving_dataconn" android:key="power_saving_dataconn" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/title_power_saving_gps" android:key="power_saving_gps" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/title_power_saving_screenlight" android:key="power_saving_screenlight" />
+    </PreferenceCategory>
+</PreferenceScreen>
