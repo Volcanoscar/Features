@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/card1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_item_selector"
+        android:layout_weight="1.0">
+
+        <com.malata.superclean.views.ItemCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            card:card_name="@string/mermory_accelerate"
+            card:card_image="@drawable/card_icon_speedup"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1.0px"
+        android:layout_height="match_parent"
+        android:background="#19000000"/>
+
+    <RelativeLayout
+        android:id="@+id/card2"
+        android:layout_width="0.0dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_item_selector"
+        android:layout_weight="1.0">
+
+        <com.malata.superclean.views.ItemCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            card:card_name="@string/garbage_collection"
+            card:card_image="@drawable/card_icon_trash"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

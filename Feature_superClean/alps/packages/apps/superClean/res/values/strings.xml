@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">内存清理</string>
+    <string name="short_cut_name">一键加速</string>
+    <string name="action_settings">设置</string>
+    <string name="mermory_space">存储空间</string>
+    <string name="mermory">内存</string>
+    <string name="mermory_accelerate">内存加速</string>
+    <string name="garbage_collection">垃圾清理</string>
+    <string name="cleaned">清理垃圾(<xliff:g id="memory">%1$s</xliff:g>)</string>
+    <string name="scanning">扫描中...</string>
+    <string name="scanning_m_of_n">扫描中 %1$d/%2$d</string>
+    <string name="scannable_memory">可清理内存</string>
+    <string name="one_key_clean">一键清理</string>
+    <string name="all_clean">共清理</string>
+    <string name="empty_cache">缓存为空.</string>
+    <item name="cpb_default_rotation_speed" format="float" type="string">1</item>
+    <item name="cpb_default_sweep_speed" format="float" type="string">1</item>
+</resources>
